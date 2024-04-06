@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/inner_frame_layout_padding">
+        <EditText
+            android:inputType="textEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/emailEditText"
+            android:hint="Email"
+            android:layout_marginHorizontal="@dimen/inner_frame_layout_horizontal_padding"
+         />
+        <EditText
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/inner_frame_layout_horizontal_padding"
+            android:layout_below="@id/emailEditText"
+            android:hint="Senha"
+            android:id="@+id/passwordEditText" />
+        <Button
+            android:text="Login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@id/passwordEditText"
+            android:clickable="true"
+            android:focusable="true"
+            android:id="@+id/loginButton" />
+        <TextView
+        android:id="@+id/forgotPasswordTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordEditText"
+        android:text="Esqueci a Senha"
+        android:textColor="@android:color/holo_blue_light"
+        android:layout_gravity="center"
+        android:clickable="true"
+        android:focusable="true" />
+        <TextView
+            android:id="@+id/signupTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/forgotPasswordTextView"
+            android:text="Cadastrar-se"
+            android:textColor="@android:color/holo_blue_light"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:focusable="true"/>
+
+    </LinearLayout>
+
+</LinearLayout>
